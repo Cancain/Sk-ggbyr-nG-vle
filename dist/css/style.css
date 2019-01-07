@@ -154,7 +154,7 @@ grid-template-areas:
 
 .footer {
     position: relative;
-    background: #000;
+    background: var(--dark);
     color: var(--light);
     text-align: center;
     width: 100%;
@@ -166,7 +166,7 @@ grid-template-areas:
 .footer h3 {
     font-size: 0.8rem;
     margin-bottom: 0;
-    color: var(--dark);
+    color: var(--shadow);
     }
 
 .footer h2 {
