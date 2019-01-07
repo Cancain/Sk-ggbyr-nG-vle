@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
-      integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Skäggbyrån</title>
-  </head>
-
-  <body>
+<?php include 'inc/header.html' ?>
     <div class="wrapper">
       <!-- Top Container -->
       <section class="top-container">
