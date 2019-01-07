@@ -1,0 +1,15 @@
+{
+  "name": "skaggbyran-gavle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Tomas Eriksson, Dennis Lindgren",
+  "license": "MIT",
+  "dependencies": {
+    "js-datepicker": "^4.0.10",
+    "node-sass": "^4.11.0"
+  }
+}

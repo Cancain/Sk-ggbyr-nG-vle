@@ -1,0 +1,127 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+body {
+  background: #b9d1e1;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  @media (min-width: 768px) {
+    a {
+      color: #83a8c2; } }
+
+.navH {
+  display: inline;
+  margin-right: 0.5rem; }
+
+#navLg {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    #navLg {
+      display: inline; } }
+
+#navBgLg {
+  background: #5681a0;
+  box-sizing: border-box; }
+
+#hambBtn {
+  position: absolute;
+  z-index: 3;
+  right: 25px;
+  top: 20px;
+  width: 40px; }
+  @media (min-width: 768px) {
+    #hambBtn {
+      display: none; } }
+
+#menuSm {
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0; }
+
+#menuLg {
+  margin: 3.3rem 0 0 0; }
+
+li {
+  color: #c7d8e4; }
+
+li:hover {
+  color: #386789;
+  transition: all 0.5s ease-out; }
+
+#dropDownMenuSm {
+  background: #5681a0; }
+
+#logo {
+  width: 280px;
+  opacity: 0.75; }
+  @media (min-width: 768px) {
+    #logo {
+      width: 400px; } }
+
+.hidden {
+  display: none; }
+
+#spacing {
+  letter-spacing: -2px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.2fr; }
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 0.4fr 0.6fr 1.5fr 0.5fr;
+      padding-top: 1rem; } }
+
+@media (min-width: 768px) {
+  .box1 {
+    grid-column: 2;
+    grid-row: 1; } }
+
+.box2 {
+  grid-column: 3;
+  grid-row: 1; }
+  @media (min-width: 768px) {
+    .box2 {
+      grid-column: 3/5; } }
+
+@media (min-width: 768px) {
+  .gridContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; } }
+
+@media (min-width: 768px) {
+  #box1Contact {
+    grid-column: 2;
+    grid-row: 1; } }
+
+@media (min-width: 768px) {
+  .box2Contact {
+    grid-column: 2;
+    grid-row: 2; } }
+
+@media (min-width: 768px) {
+  .box3Contact {
+    grid-column: 2;
+    grid-row: 3; } }
+
+#mainContent {
+  color: black; }
+
+.formField {
+  width: 100%;
+  border: 0;
+  border-radius: 3px; }

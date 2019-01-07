@@ -1,0 +1,179 @@
+// @import "grid";
+@import "config";
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: $secondaryColor;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  @include tabletUp() {
+    color: $primaryTextColor;
+  }
+}
+
+//NavBar
+
+.navH {
+  display: inline;
+  margin-right: 0.5rem;
+}
+.navV {
+}
+
+#navLg {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  @include tabletUp() {
+    display: inline;
+  }
+}
+
+#navBgLg {
+  background: $primaryColor;
+  box-sizing: border-box;
+}
+
+#hambBtn {
+  position: absolute;
+  z-index: 3;
+  right: 25px;
+  top: 20px;
+  width: 40px;
+
+  @include tabletUp() {
+    display: none;
+  }
+}
+
+.navSm {
+}
+
+#menuSm {
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+#menuLg {
+  margin: 3.3rem 0 0 0;
+}
+
+li {
+  color: lighten($primaryTextColor, 20%);
+}
+
+li:hover {
+  color: $secondaryTextColor;
+  @include easeOut();
+}
+
+#dropDownMenuSm {
+  background: $primaryColor;
+}
+
+#logo {
+  width: 280px;
+  opacity: 0.75;
+  @include tabletUp() {
+    width: 400px;
+  }
+}
+//Controllers
+
+.hidden {
+  display: none;
+}
+
+#spacing {
+  letter-spacing: -2px;
+}
+
+//Grid
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.2fr;
+  @include tabletUp() {
+    grid-template-columns: 0.4fr 0.6fr 1.5fr 0.5fr;
+    padding-top: 1rem;
+  }
+}
+
+.box1 {
+  @include tabletUp() {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.box2 {
+  grid-column: 3;
+  grid-row: 1;
+
+  @include tabletUp() {
+    grid-column: 3/5;
+  }
+}
+
+//GridContact
+
+.gridContact {
+  @include tabletUp() {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+#box1Contact {
+  @include tabletUp() {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.box2Contact {
+  @include tabletUp() {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+.box3Contact {
+  @include tabletUp() {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+#mainContent {
+  color: black;
+}
+
+//Contact form
+
+.formField {
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+}
+
+.noAuto{
+  autocomplete="off";
+}
