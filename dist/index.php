@@ -10,7 +10,7 @@
       integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Skäggbyrån</title>
   </head>
 
@@ -69,13 +69,5 @@
     </div>
     <!-- Wrapper Ends -->
 
-      <!-- Footer-->
-      <div class="footer">
-        <h3>Gävle</h3>
-        <h2>Atlasgatan 8</h2> 
-        <p> lena.unden@skaggbyran.se</p>
-      </div>
- 
+    <?php include 'inc/footer.html' ?>
 
-        </body>
-</html>

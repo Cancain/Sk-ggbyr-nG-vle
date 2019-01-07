@@ -64,7 +64,7 @@ grid-template-areas:
  .showcase{
      grid-area: showcase;
      min-height: 400px;
-     background: url(img/showcase1.jpg);
+     background: url(../img/showcase1.jpg);
      background-size: cover;
      background-position: center;
      padding: 3rem;
