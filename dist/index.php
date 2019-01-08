@@ -23,25 +23,25 @@
 
       <!-- Boxes Section  -->
       <section class="boxes">
-        <div class="box">
+        <div class="box"> 
           <i class="fas fa-briefcase fa-4x"></i>
           <p class="desc">Arbetsträning</p>
         </div>
-          <div class="boxi">
+          <div class="boximg">
         <img src="img/code1.jpg" alt="">
           </div>
         <div class="box">
           <i class="fas fa-archive fa-4x"></i>
           <p class="desc">Projekt</p>
         </div>
-        <div class="boxi">
+        <div class="boximg">
           <img src="img/code2.jpg" alt="">
             </div>
         <div class="box">
           <i class="fas fa-info-circle fa-4x"></i>
           <p class="desc">Om oss</p>
         </div>
-        <div class="boxi">
+        <div class="boximg">
           <img src="img/code3.jpg" alt="">
             </div>
         </section>
