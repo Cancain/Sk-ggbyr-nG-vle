@@ -45,11 +45,7 @@
           <img src="img/code3.jpg" alt="">
             </div>
         </section>
-
       <!-- Info Section-->
-
-
-
     </div>
     <!-- Wrapper Ends -->
 

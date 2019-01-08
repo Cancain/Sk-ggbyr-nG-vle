@@ -46,6 +46,31 @@
 #mainContent {
   color: black; }
 
+.formField {
+  border: 0;
+  width: 80vw;
+  border-radius: 3px;
+  padding: 1rem;
+  font-size: 1.3rem; }
+  @media (min-width: 768px) {
+    .formField {
+      width: 30vw; } }
+
+.formBox {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .formBox {
+      width: 30vw;
+      text-align: start; } }
+
+form {
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 768px) {
+    form {
+      width: 30vw; } }
+
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
@@ -123,28 +148,3 @@ li:hover {
 
 #spacing {
   letter-spacing: -2px; }
-
-.formField {
-  border: 0;
-  width: 80vw;
-  border-radius: 3px;
-  padding: 1rem;
-  font-size: 1.3rem; }
-  @media (min-width: 768px) {
-    .formField {
-      width: 30vw; } }
-
-.formBox {
-  text-align: center; }
-  @media (min-width: 768px) {
-    .formBox {
-      width: 30vw;
-      text-align: start; } }
-
-form {
-  font-size: 1.4rem;
-  margin: 0 auto;
-  text-align: center; }
-  @media (min-width: 768px) {
-    form {
-      width: 30vw; } }

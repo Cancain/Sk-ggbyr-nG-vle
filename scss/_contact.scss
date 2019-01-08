@@ -1,0 +1,32 @@
+//Contact form
+
+.formField {
+    border: 0;
+    width:80vw; 
+    border-radius: 3px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    @include tabletUp(){
+      width: 30vw;
+    }
+  }
+  
+  .formBox {
+    text-align: center;
+    // width:80vw; 
+    @include tabletUp(){
+      width: 30vw;
+      text-align: start;
+    }
+  }
+  
+  form {
+    
+    font-size: 1.4rem;
+    // width:80vw; 
+    margin:0 auto;
+    text-align:center;
+    @include tabletUp(){
+      width: 30vw;
+    }
+  }
