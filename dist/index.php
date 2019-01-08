@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 <?php require_once 'inc/header.html' ?>
     <div class="wrapper">
-=======
-<div class="">
 
-<?php include 'inc/header.html' ?>
->>>>>>> 0975b58872b1cc59519267ffe13a7e8f00f5643e
       <!-- Top Container -->
       <section class="top-container">
         <header class="showcase">
