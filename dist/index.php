@@ -1,5 +1,6 @@
+<div class="">
+
 <?php include 'inc/header.html' ?>
-    <div class="wrapper">
       <!-- Top Container -->
       <section class="top-container">
         <header class="showcase">
@@ -45,9 +46,9 @@
           <img src="img/code3.jpg" alt="">
             </div>
         </section>
-      <!-- Info Section-->
-    </div>
-    <!-- Wrapper Ends -->
+    
 
     <?php include 'inc/footer.html' ?>
 
+</div>
+    <!-- Wrapper Ends -->
