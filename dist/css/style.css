@@ -24,7 +24,7 @@ html{
 body {
     background: rgb(217, 222, 224);
     margin: 0 0;
-    }
+}
 
 .btn {
     background: var(--dark);
@@ -41,7 +41,6 @@ img{
 .wrapper {
     display: grid;
     grid-gap: 20px;
-
 }
 
 /* Top Container */
@@ -111,13 +110,12 @@ grid-template-areas:
 /* Boxes */
 
 .boxes {
+    display: grid;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     max-width: 945px;
-
 }
 
 .box {
@@ -140,8 +138,8 @@ grid-template-areas:
 }
 
  .boximg img{
-    width: 90%;
-    height: 90%;
+    max-width: 150px;
+    max-height: 150px;
     margin-left: auto;
 	margin-right: auto;
     display: block;
@@ -199,12 +197,14 @@ grid-template-areas:
         grid-template-areas:
         'showcase showcase'
         'top-box-a top-box-b';
-        max-width: 100%;
+        margin: 0 0;
     }
+    
     .showcase h1 {
         font-size: 2.5rem;
     }
-    .main-nav ul {
+
+    /* .main-nav ul {
         grid-template-columns: 1fr;
     }
     .info {
@@ -214,20 +214,15 @@ grid-template-areas:
         display:block;
         text-align:center;
         margin: auto;
-    }
+    } */
 
     .boxes {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
     }
+   
 
-      .hide{
-        display: none;
-    }
 }
-
 
 @media (max-width: 500px) {
     .top-container{
@@ -240,4 +235,8 @@ grid-template-areas:
     .hide{
         display: none;
     }
+    .boxes {
+        grid-template-columns: repeat(1, 6fr);
+    }
+    
 }
