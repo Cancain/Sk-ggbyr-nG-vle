@@ -77,21 +77,6 @@ form {
     font-size: 1.2rem;
     cursor: pointer; }
 
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-body {
-  background: #b9d1e1;
-  margin: 0;
-  padding: 0; }
-
-a {
-  text-decoration: none;
-  color: black; }
-  @media (min-width: 768px) {
-    a {
-      color: #83a8c2; } }
-
 .navH {
   display: inline;
   margin-right: 0.5rem; }
@@ -148,6 +133,28 @@ li:hover {
   @media (min-width: 768px) {
     #logo {
       width: 400px; } }
+
+#dropDownMenuContact {
+  background: #5681a0;
+  color: #c7d8e4; }
+  #dropDownMenuContact ul {
+    margin: 0;
+    cursor: pointer; }
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+body {
+  background: #b9d1e1;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  @media (min-width: 768px) {
+    a {
+      color: #83a8c2; } }
 
 .hidden {
   display: none; }

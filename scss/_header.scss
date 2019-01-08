@@ -1,0 +1,78 @@
+//NavBar
+
+.navH {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  #navLg {
+    display: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  
+    @include tabletUp() {
+      display: inline;
+    }
+  }
+  
+  #navBgLg {
+    background: $primaryColor;
+    box-sizing: border-box;
+  }
+  
+  #hambBtn {
+    position: absolute;
+    z-index: 3;
+    right: 25px;
+    top: 8px;
+    width: 40px;
+  
+    @include tabletUp() {
+      display: none;
+    }
+  }
+  
+  #menuSm {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  #menuLg {
+    margin: 3.3rem 0 0 0;
+  }
+  
+  li {
+    color: lighten($primaryTextColor, 20%);
+  }
+  
+  li:hover {
+    color: $secondaryTextColor;
+    @include easeOut();
+  }
+  
+  #dropDownMenuSm {
+    background: $primaryColor;
+  }
+  
+  #logo {
+    width: 280px;
+    opacity: 0.75;
+    @include tabletUp() {
+      width: 400px;
+    }
+  }
+
+  #dropDownMenuContact{
+      background: $primaryColor;
+      color: lighten($primaryTextColor, 20%);
+      & ul{
+          margin: 0;
+          cursor: pointer;
+      }
+  }
