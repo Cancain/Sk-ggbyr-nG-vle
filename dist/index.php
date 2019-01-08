@@ -1,4 +1,4 @@
-<?php include 'inc/header.html' ?>
+<?php require_once 'inc/header.html' ?>
     <div class="wrapper">
       <!-- Top Container -->
       <section class="top-container">
@@ -49,5 +49,5 @@
     </div>
     <!-- Wrapper Ends -->
 
-    <?php include 'inc/footer.html' ?>
+    <?php require_once 'inc/footer.html' ?>
 

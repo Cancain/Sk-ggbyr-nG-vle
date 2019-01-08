@@ -1,5 +1,5 @@
-<?php include 'inc/header.html' ?>
-<?php include 'inc/bookController.php' ?>
+<?php require_once 'inc/header.html' ?>
+<?php require_once 'inc/bookController.php' ?>
 
 <div class="gridContact">
   <div id="box1Contact">
@@ -35,6 +35,6 @@
     </form>
   </div>
 </div>
-<?php include 'inc/footer.html' ?>
+<?php require_once 'inc/footer.html' ?>
 
 

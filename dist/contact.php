@@ -1,4 +1,4 @@
-<?php include 'inc/header.html' ?>
+<?php require_once 'inc/header.html' ?>
 
 
-<?php include 'inc/footer.html' ?>
+<?php require_once 'inc/footer.html' ?>

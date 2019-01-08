@@ -136,10 +136,22 @@ li:hover {
 
 #dropDownMenuContact {
   background: #5681a0;
-  color: #c7d8e4; }
+  color: #c7d8e4;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  font-size: 1.1rem;
+  text-transform: uppercase; }
   #dropDownMenuContact ul {
     margin: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    list-style-type: none; }
+  #dropDownMenuContact li {
+    display: inline;
+    margin: 0 0.5rem 0 0; }
+
+#contactBtnLg {
+  cursor: pointer; }
 
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
