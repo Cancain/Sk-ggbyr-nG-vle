@@ -1,4 +1,4 @@
-<?php include 'inc/navBar.html' ?>
+<?php include 'inc/header.html' ?>
 
 <?php
 error_reporting(0);
@@ -55,7 +55,7 @@ if(filter_has_var(INPUT_POST, 'submit')){
 
       <div class="formBox">
         <label for="">Datum</label><br />
-        <input class="formField noAuto" type="text" name="date" id="date" 
+        <input class="formField" type="text" name="date" id="date" 
         value="<?php echo isset($_POST['date']) ? $date : '' ?>" />
       </div>
 
@@ -78,5 +78,6 @@ if(filter_has_var(INPUT_POST, 'submit')){
     </form>
   </div>
 </div>
+<?php include 'inc/footer.html' ?>
 
 
