@@ -1,5 +1,4 @@
 <?php include 'inc/header.html' ?>
-
 <?php include 'inc/contactController.php' ?>
 
 <div class="gridContact">
@@ -26,7 +25,7 @@
       <div class="formBox">
         <label for="">Meddelande</label><br />
         <textarea class="formField" name="message" id="" cols="30" rows="10"><?php echo isset($_POST['message']) ? $message : '' ?></textarea><br />
-        <button type="submit" name="submit">Skicka</button>
+        <button class="formBtn" type="submit" name="submit">Skicka</button>
       </div>
       <div id="errorMsg">
         <?php echo "<p>$msg</p>" ?>

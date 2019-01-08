@@ -46,30 +46,36 @@
 #mainContent {
   color: black; }
 
-.formField {
-  border: 0;
-  width: 80vw;
-  border-radius: 3px;
-  padding: 1rem;
-  font-size: 1.3rem; }
-  @media (min-width: 768px) {
-    .formField {
-      width: 30vw; } }
-
-.formBox {
-  text-align: center; }
-  @media (min-width: 768px) {
-    .formBox {
-      width: 30vw;
-      text-align: start; } }
-
 form {
   font-size: 1.4rem;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  margin: 2rem 0 0 0; }
   @media (min-width: 768px) {
     form {
       width: 30vw; } }
+  form .formBox {
+    text-align: center; }
+    @media (min-width: 768px) {
+      form .formBox {
+        width: 30vw;
+        text-align: start; } }
+  form .formField {
+    border: 0;
+    width: 80vw;
+    border-radius: 3px;
+    padding: 1rem;
+    font-size: 1.3rem; }
+    @media (min-width: 768px) {
+      form .formField {
+        width: 30vw; } }
+  form .formBtn {
+    border: 0;
+    border-radius: 7px;
+    background: #b9d1e1;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    cursor: pointer; }
 
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }

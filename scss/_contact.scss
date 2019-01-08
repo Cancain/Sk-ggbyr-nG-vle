@@ -1,32 +1,41 @@
-//Contact form
-
-.formField {
-    border: 0;
-    width:80vw; 
-    border-radius: 3px;
-    padding: 1rem;
-    font-size: 1.3rem;
-    @include tabletUp(){
-      width: 30vw;
-    }
-  }
-  
-  .formBox {
-    text-align: center;
-    // width:80vw; 
-    @include tabletUp(){
-      width: 30vw;
-      text-align: start;
-    }
-  }
-  
+//Contact form  
   form {
     
     font-size: 1.4rem;
     // width:80vw; 
     margin:0 auto;
     text-align:center;
+    margin: 2rem 0 0 0;
     @include tabletUp(){
       width: 30vw;
+    }
+
+    & .formBox {
+        text-align: center;
+        // width:80vw; 
+        @include tabletUp(){
+          width: 30vw;
+          text-align: start;
+        }
+      }
+    
+    & .formField {
+      border: 0;
+      width:80vw; 
+      border-radius: 3px;
+      padding: 1rem;
+      font-size: 1.3rem;
+      @include tabletUp(){
+        width: 30vw;
+      }
+    }
+
+    & .formBtn {
+      border: 0;
+      border-radius: 7px;
+      background: $secondaryColor;
+      padding: 0.4rem;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
   }
