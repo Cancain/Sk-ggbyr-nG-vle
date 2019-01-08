@@ -24,7 +24,6 @@ html{
 body {
     background: rgb(217, 222, 224);
     margin: 0 0;
-    /* line-height:  1.4; */
     }
 
 .btn {
@@ -116,8 +115,9 @@ grid-template-areas:
     margin-right: auto;
     display: grid;
     grid-gap: 20px;
-    /* grid-template-rows: 200px 200px; */
     grid-template-columns: repeat(3, 1fr);
+    max-width: 945px;
+
 }
 
 .box {
@@ -135,15 +135,16 @@ grid-template-areas:
 
 .boximg {
     background: var(--primary);
-    text-align: center;
-    text-decoration: none;
-    box-shadow: var(--shadow);
-    padding: 0.6rem 1rem;    
+    box-shadow: var(--shadow);    
+    padding: 1rem 1rem;
 }
 
  .boximg img{
-    width: 270px;
-    height: 180px;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+	margin-right: auto;
+    display: block;
 } 
 
 /* Info */
@@ -198,6 +199,7 @@ grid-template-areas:
         grid-template-areas:
         'showcase showcase'
         'top-box-a top-box-b';
+        max-width: 100%;
     }
     .showcase h1 {
         font-size: 2.5rem;
@@ -213,17 +215,15 @@ grid-template-areas:
         text-align:center;
         margin: auto;
     }
+
     .boxes {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     }
 
-    .boximg img{
-        width: 340px;
-        height: 180px;
-    } 
-
-    .hide{
+      .hide{
         display: none;
     }
 }
