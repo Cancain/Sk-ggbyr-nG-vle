@@ -6,6 +6,8 @@ const dropDownMenuSm = document.getElementById("dropDownMenuSm");
 const contactBtnLg = document.getElementById("contactBtnLg");
 const dropDownMenuContact = document.getElementById("dropDownMenuContact");
 
+console.log()
+
 var hambPressed = false;
 
 if (window.name == 'open') {
