@@ -1,5 +1,5 @@
 <?php require_once 'inc/header.html' ?>
-    <div class="wrapper">
+<div class="wrapper">
 
       <!-- Top Container -->
       <section class="top-container">

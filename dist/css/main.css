@@ -111,7 +111,7 @@ form {
   text-align: center;
   text-transform: uppercase;
   line-height: 3rem;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
   margin: 0; }
 
@@ -186,13 +186,16 @@ img {
 
 .wrapper {
   display: grid;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  align-items: start;
+  justify-content: center; }
 
 /* Top Container */
 @media (min-width: 768px) {
   .top-container {
     display: grid;
     max-width: 945px;
+    width: 945px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -250,7 +253,8 @@ img {
       margin-left: auto;
       margin-right: auto;
       grid-template-columns: repeat(3, 1fr);
-      max-width: 945px; } }
+      max-width: 945px;
+      width: 945px; } }
 
 .box {
   background: var(--primary);
@@ -268,8 +272,8 @@ img {
   padding: 1rem 1rem; }
 
 .boximg img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100%;
+  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block; }
@@ -291,8 +295,7 @@ img {
   .showcase h1 {
     font-size: 2.5rem; }
   .boxes {
-    grid-template-columns: repeat(3, 2fr);
-    width: 100vw; } }
+    grid-template-columns: repeat(3, 2fr); } }
 
 @media (max-width: 500px) {
   .top-container {

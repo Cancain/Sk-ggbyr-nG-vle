@@ -24,7 +24,7 @@ html{
 body {
     background: rgb(217, 222, 224);
     margin: 0 0;
-}
+  }
 
 .btn {
     background: var(--dark);
@@ -41,6 +41,9 @@ img{
 .wrapper {
     display: grid;
     grid-gap: 20px;
+    align-items: start;
+    justify-content: center;
+
 }
 
 /* Top Container */
@@ -49,6 +52,7 @@ img{
     @include tabletUp {
         display: grid;
         max-width: 945px;
+        width: 945px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -119,6 +123,7 @@ img{
         margin-right: auto;        
         grid-template-columns: repeat(3, 1fr);
         max-width: 945px;
+        width: 945px;
      }
   
 }
@@ -143,8 +148,8 @@ img{
 }
 
  .boximg img{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: auto;
 	margin-right: auto;
     display: block;
@@ -178,7 +183,6 @@ img{
 
     .boxes {
     grid-template-columns: repeat(3, 2fr);
-    width: 100vw;
     }
    
 
