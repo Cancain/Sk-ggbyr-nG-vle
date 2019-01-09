@@ -50,4 +50,4 @@
 
 </div>
     <!-- Wrapper Ends -->
-    <?php require_once 'inc/footer.html' ?>
+    <?php require 'inc/footer.html' ?>

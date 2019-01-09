@@ -6,12 +6,25 @@ const dropDownMenuSm = document.getElementById("dropDownMenuSm");
 const contactBtnLg = document.getElementById("contactBtnLg");
 const dropDownMenuContact = document.getElementById("dropDownMenuContact");
 
-console.log()
+let url = window.location.href;
+let currentPage = url.substr(url.lastIndexOf('/') + 1);
+let contactPages = [
+  "book.php",
+  "contact.php"
+];
+
+setContactDrop();
+
+
 
 var hambPressed = false;
 
+
+
 if (window.name == 'open') {
-  dropDownMenuContact.classList.remove("hidden");
+  if (window.innerWidth > 768) {
+    dropDownMenuContact.classList.remove("hidden");
+  }
 } else {
   dropDownMenuContact.classList.add("hidden");
 }
@@ -27,6 +40,22 @@ icon.addEventListener("click", () => {
     updateIcon();
   }
 });
+
+function setContactDrop() {
+  let inContact = false;
+  contactPages.forEach(element => {
+    if (currentPage == element) {
+      inContact = true;
+      console.log("true");
+    }
+  });
+  if (inContact) {
+    dropDownMenuContact.classList.remove("hidden");
+  }
+  else {
+    dropDownMenuContact.classList.add("hidden");
+  }
+}
 
 function openMenu() {
   dropDownMenuSm.classList.remove("hidden");
