@@ -5,24 +5,22 @@ $msg = '';
 $msgClass = '';
 
 if(filter_has_var(INPUT_POST, 'submit')){
-  $msg = 'something';
+  $msg = '';
   $name = htmlspecialchars($_POST['name']);
-  $date = htmlspecialchars($_POST['date']);
   $email = htmlspecialchars($_POST['email']);
   $message = htmlspecialchars($_POST['message']);
   
 
-  if(!empty($name) && !empty($date) && !empty($email) && !empty($message)){
+  if(!empty($name) && !empty($email) && !empty($message)){
     //empty check passes
     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
       $msg = 'Du måste ange en korrekt email';
     } else {
       $toEmail = "eriksson.tomas@gmail.com";
-      $subject = "Bokningsönskan från" . $name;
+      $subject = "Meddelande från" . $name;
       $body = '<h2>Bokningsönskan<h2>
       <h4>Namn</h4><p>'.$name.'</p>
       <h4>Email</h4><p>'.$email.'</p>
-      <h4>Datum</h4><p>'.$date.'</p>
       <h4>Meddelande</h4><p>'.$message.'</p>';
 
       //Email headers

@@ -1,5 +1,5 @@
 <?php require_once 'inc/header.html' ?>
-<?php require_once 'inc/bookController.php' ?>
+<!-- <?php require_once 'inc/bookController.php' ?> -->
 
 <div class="gridContact">
   <div id="box1Contact">
@@ -8,13 +8,7 @@
         <label for="">Namn</label><br />
         <input class="formField" type="text" name="name" id="" 
         value="<?php echo isset($_POST['name']) ? $name : '' ?>" />
-      </div>
-
-      <div class="formBox">
-        <label for="">Datum</label><br />
-        <input class="formField" type="text" name="date" id="date" 
-        value="<?php echo isset($_POST['date']) ? $date : '' ?>" />
-      </div>
+      </div> 
 
       <div class="formBox">
         <label for="">Email</label><br />
@@ -30,8 +24,6 @@
       <div id="errorMsg">
         <?php echo "<p>$msg</p>" ?>
       </div>
-      <script src="../node_modules/js-datepicker/dist/datepicker.min.js"></script>
-      <script src="./js/calendar.js"></script>
     </form>
   </div>
 </div>
