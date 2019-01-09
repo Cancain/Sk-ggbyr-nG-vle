@@ -49,6 +49,6 @@
     
 
     <?php require_once 'inc/footer.html' ?>
-asdasdasd
+
 </div>
     <!-- Wrapper Ends -->
