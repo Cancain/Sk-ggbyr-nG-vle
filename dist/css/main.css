@@ -167,8 +167,7 @@ li:hover {
 
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  color: var(--dark); }
+  font-family: 'Open Sans', sans-serif; }
 
 body {
   background: #d9dee0;
@@ -200,7 +199,8 @@ img {
     margin-right: auto;
     margin-top: 20px;
     grid-gap: 20px;
-    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b'; } }
+    grid-template-areas: 'showcase showcase top-box-a'
+ 'showcase showcase top-box-b'; } }
 
 /*  Showcase */
 .showcase {
@@ -290,7 +290,8 @@ img {
 /* Media Queries */
 @media (max-width: 768px) {
   .top-container {
-    grid-template-areas: 'showcase showcase' 'top-box-a top-box-b';
+    grid-template-areas: 'showcase showcase'
+ 'top-box-a top-box-b';
     margin: 0 0; }
   .showcase h1 {
     font-size: 2.5rem; }
@@ -299,7 +300,9 @@ img {
 
 @media (max-width: 500px) {
   .top-container {
-    grid-template-areas: 'showcase' 'top-box-a'  'top-box-b'; }
+    grid-template-areas: 'showcase'
+ 'top-box-a' 
+ 'top-box-b'; }
   .hide {
     display: none; }
   .boxes {
