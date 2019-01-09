@@ -112,7 +112,7 @@ form {
   text-align: center;
   text-transform: uppercase;
   line-height: 3rem;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 800;
   margin: 0; }
 
@@ -187,13 +187,16 @@ img {
 
 .wrapper {
   display: grid;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  align-items: start;
+  justify-content: center; }
 
 /* Top Container */
 @media (min-width: 768px) {
   .top-container {
     display: grid;
     max-width: 945px;
+    width: 945px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -251,7 +254,8 @@ img {
       margin-left: auto;
       margin-right: auto;
       grid-template-columns: repeat(3, 1fr);
-      max-width: 945px; } }
+      max-width: 945px;
+      width: 945px; } }
 
 .box {
   background: var(--primary);
@@ -269,8 +273,8 @@ img {
   padding: 1rem 1rem; }
 
 .boximg img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 100%;
+  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block; }
@@ -283,6 +287,24 @@ img {
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
   padding: 3rem; }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .top-container {
+    grid-template-areas: 'showcase showcase' 'top-box-a top-box-b';
+    margin: 0 0; }
+  .showcase h1 {
+    font-size: 2.5rem; }
+  .boxes {
+    grid-template-columns: repeat(3, 2fr); } }
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas: 'showcase' 'top-box-a'  'top-box-b'; }
+  .hide {
+    display: none; }
+  .boxes {
+    grid-template-columns: repeat(1, 6fr); } }
 
 /* Footer */
 .footer {
@@ -310,36 +332,6 @@ img {
   margin-top: 0;
   font-size: 0.6rem;
   font-weight: 500; }
-
-/* Media Queries */
-@media (max-width: 700px) {
-  .top-container {
-    grid-template-areas: 'showcase showcase' 'top-box-a top-box-b';
-    margin: 0 0; }
-  .showcase h1 {
-    font-size: 2.5rem; }
-  /* .main-nav ul {
-        grid-template-columns: 1fr;
-    }
-    .info {
-        grid-template-columns: 1fr;
-    }
-    .info .bt {
-        display:block;
-        text-align:center;
-        margin: auto;
-    } */
-  .boxes {
-    grid-template-columns: repeat(3, 2fr);
-    width: 100vw; } }
-
-@media (max-width: 500px) {
-  .top-container {
-    grid-template-areas: 'showcase' 'top-box-a'  'top-box-b'; }
-  .hide {
-    display: none; }
-  .boxes {
-    grid-template-columns: repeat(1, 6fr); } }
 
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
