@@ -73,10 +73,11 @@ form {
   form .formBtn {
     border: 0;
     border-radius: 7px;
-    background: #b9d1e1;
+    background: #5681a0;
     padding: 0.4rem;
     font-size: 1.2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white; }
 
 .navH {
   display: inline;
