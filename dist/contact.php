@@ -1,5 +1,5 @@
 <?php require_once 'inc/header.html' ?>
-<!-- <?php require_once 'inc/bookController.php' ?> -->
+<!-- <?php require_once 'inc/contactController.php' ?> -->
 
 <div class="gridContact">
   <div id="box1Contact">
