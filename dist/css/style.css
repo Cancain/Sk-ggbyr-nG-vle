@@ -41,6 +41,7 @@ img{
 .wrapper {
     display: grid;
     grid-gap: 20px;
+    overflow: hidden;
 }
 
 /* Top Container */
