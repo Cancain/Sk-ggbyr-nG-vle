@@ -48,7 +48,6 @@
         </section>
     
 
-    <?php require_once 'inc/footer.html' ?>
-
 </div>
     <!-- Wrapper Ends -->
+    <?php require_once 'inc/footer.html' ?>
