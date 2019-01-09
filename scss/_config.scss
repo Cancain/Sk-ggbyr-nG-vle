@@ -13,3 +13,15 @@ $teritaryColor: #215173;
     @content;
   }
 }
+
+@mixin tabletDown {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
