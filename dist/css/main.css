@@ -66,7 +66,9 @@ form {
     width: 80vw;
     border-radius: 3px;
     padding: 1rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    background: var(--primary);
+    box-shadow: var(--shadow); }
     @media (min-width: 768px) {
       form .formField {
         width: 30vw; } }
@@ -273,8 +275,6 @@ img {
   padding: 1rem 1rem; }
 
 .boximg img {
-  max-width: 100%;
-  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block; }
@@ -296,7 +296,7 @@ img {
   .showcase h1 {
     font-size: 2.5rem; }
   .boxes {
-    grid-template-columns: repeat(3, 2fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media (max-width: 500px) {
   .top-container {
@@ -304,7 +304,7 @@ img {
   .hide {
     display: none; }
   .boxes {
-    grid-template-columns: repeat(1, 6fr); } }
+    grid-template-columns: repeat(1, 1fr); } }
 
 /* Footer */
 .footer {
