@@ -24,7 +24,7 @@
 
       <div class="formBox">
         <label for="">Meddelande</label><br />
-        <textarea class="formField" name="message" id="" cols="30" rows="10"><?php echo isset($_POST['message']) ? $message : '' ?></textarea><br />
+        <textarea class="formMsg" name="message" id="" cols="30" rows="8"><?php echo isset($_POST['message']) ? $message : '' ?></textarea><br />
         <button class="formBtn" type="submit" name="submit">Skicka</button>
       </div>
       <div id="errorMsg">
