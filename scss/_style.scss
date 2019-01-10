@@ -17,13 +17,17 @@
 html{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color: var(--dark);
+
 
 }
 
 body {
     background: var(--secondaryColor);
-    margin: 0 0;
+    color: $primaryColor;   
+  }
+  
+  a{
+      color: $primaryTextColor;
   }
 
 
@@ -51,7 +55,6 @@ img{
     grid-gap: 20px;
     align-items: start;
     justify-content: center;
-
 }
 
 /* Top Container */
@@ -112,6 +115,7 @@ img{
 
 .top-box .bigger{
     font-size: 2rem;
+
 }
 .top-box-a {
     grid-area: top-box-a;
