@@ -6,28 +6,9 @@ const dropDownMenuSm = document.getElementById("dropDownMenuSm");
 const contactBtnLg = document.getElementById("contactBtnLg");
 const dropDownMenuContact = document.getElementById("dropDownMenuContact");
 
-let url = window.location.href;
-let currentPage = url.substr(url.lastIndexOf('/') + 1);
-let contactPages = [
-  "book.php",
-  "contact.php"
-];
-
 setContactDrop();
 
-
-
 var hambPressed = false;
-
-
-
-if (window.name == 'open') {
-  if (window.innerWidth > 768) {
-    dropDownMenuContact.classList.remove("hidden");
-  }
-} else {
-  dropDownMenuContact.classList.add("hidden");
-}
 
 icon.addEventListener("click", () => {
   if (!hambPressed) {
@@ -42,7 +23,14 @@ icon.addEventListener("click", () => {
 });
 
 function setContactDrop() {
+  let url = window.location.href;
+  let currentPage = url.substr(url.lastIndexOf('/') + 1);
   let inContact = false;
+  let contactPages = [
+    "book.php",
+    "contact.php"
+  ];
+
   contactPages.forEach(element => {
     if (currentPage == element) {
       inContact = true;
