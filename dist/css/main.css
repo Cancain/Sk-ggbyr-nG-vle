@@ -198,11 +198,16 @@ body {
   margin: 0 0; }
 
 .btn {
-  background: var(--dark);
+  background: #386789;
   color: var(--light);
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0; }
+
+.btn:hover {
+  background: #c7d8e4;
+  color: var(--dark);
+  transition: all 0.5s ease-out; }
 
 img {
   max-width: 100%; }

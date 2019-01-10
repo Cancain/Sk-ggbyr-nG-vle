@@ -26,12 +26,20 @@ body {
     margin: 0 0;
   }
 
+
 .btn {
-    background: var(--dark);
+    background: $secondaryTextColor;
     color: var(--light);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border: 0;
+}
+.btn:hover {
+    background: lighten($primaryTextColor, 20%);
+    color: var(--dark);
+    @include easeOut();
+
+
 }
 
 img{
