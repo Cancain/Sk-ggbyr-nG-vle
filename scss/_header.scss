@@ -35,18 +35,20 @@
   
   #menuSm {
     list-style-type: none;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     line-height: 3rem;
     font-size: 1rem;
     font-weight: 800;
     margin: 0;
     padding: 0;
+    box-shadow: var(--shadow);
+
   }
 
   #menuSm li{
-    border-bottom: #dadada solid 1px;
-    background-color: #f9f9f9;
+    border-bottom: lighten($primaryColor, 25%) solid 1px;
+    background-color: lighten($secondaryColor, 10%) ; 
     color: #333333;
     font-weight: 500;
   }
