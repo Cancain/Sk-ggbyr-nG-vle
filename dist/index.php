@@ -12,12 +12,12 @@
         </header>
         <div class="top-box top-box-a">
           <h4>Här finns vi!</h4>
-          <p class="price">Gävle</p>
+          <p class="bigger">Gävle</p>
           <a href="" class="btn">Hitta hit!</a>
         </div>
         <div class="top-box top-box-b">
           <h4>Ett äpple</h4>
-          <p class="price">Snel hest</p>
+          <p class="bigger">Snel hest</p>
           <a href="" class="btn">Go</a>
         </div>
       </section>
