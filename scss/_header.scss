@@ -35,15 +35,22 @@
   
   #menuSm {
     list-style-type: none;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase;
     line-height: 3rem;
     font-size: 1rem;
     font-weight: 800;
     margin: 0;
-    padding: 0 25px 0 0;
+    padding: 0;
   }
-  
+
+  #menuSm li{
+    border-bottom: #dadada solid 1px;
+    background-color: #f9f9f9;
+    color: #333333;
+    font-weight: 500;
+  }
+
   #menuLg {
     margin: 3.3rem 0 0 0;
   }
