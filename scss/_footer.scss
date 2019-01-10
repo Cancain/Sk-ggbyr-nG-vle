@@ -11,10 +11,19 @@
     bottom: 0;
   }
 
+.footer a {
+color: var(--light);
+}
+.footer a:hover {
+    color: $secondaryTextColor;
+    @include easeOut();
+}
+
 .footer h3 {
     font-size: 0.8rem;
+    padding-top:5px;
     margin-bottom: 0;
-    color: var(--shadow);
+    color: lighten($primaryTextColor, 20%);
     }
 
 .footer h2 {
@@ -23,6 +32,7 @@
     margin-top: 0;
     font-weight: 500;
 }
+
 
 .footer p{
     margin-top: 0;

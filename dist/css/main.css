@@ -258,7 +258,7 @@ img {
   box-shadow: var(--shadow);
   padding: 1.5rem; }
 
-.top-box .price {
+.top-box .bigger {
   font-size: 2rem; }
 
 .top-box-a {
@@ -337,10 +337,18 @@ img {
   left: 0;
   bottom: 0; }
 
+.footer a {
+  color: var(--light); }
+
+.footer a:hover {
+  color: #386789;
+  transition: all 0.5s ease-out; }
+
 .footer h3 {
   font-size: 0.8rem;
+  padding-top: 5px;
   margin-bottom: 0;
-  color: var(--shadow); }
+  color: #c7d8e4; }
 
 .footer h2 {
   font-size: 0.7rem;
