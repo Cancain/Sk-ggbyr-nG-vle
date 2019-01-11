@@ -25,18 +25,18 @@
       <!-- Boxes Section  -->
       <section class="boxes">
         <div class="box"> 
-          <i class="fas fa-briefcase fa-4x"></i>
-          <p class="desc">Arbetsträning</p>
+          <a href="arbetstraning.php"><i class="fas fa-briefcase fa-4x"></i>
+          <p class="desc">Arbetsträning</p></a>
         </div>
           <div class="boximg">
-        <img src="img/code1.jpg" alt="">
+        <img src="img/code1.jpeg" alt="">
           </div>
         <div class="box">
           <i class="fas fa-archive fa-4x"></i>
           <p class="desc">Projekt</p>
         </div>
         <div class="boximg">
-          <img src="img/code2.jpg" alt="">
+          <img src="img/code2.jpeg" alt="">
             </div>
         <div class="box">
           <i class="fas fa-info-circle fa-4x"></i>
