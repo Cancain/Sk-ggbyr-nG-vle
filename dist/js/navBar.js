@@ -5,9 +5,20 @@ const icon = document.getElementById("hambBtn");
 const dropDownMenuSm = document.getElementById("dropDownMenuSm");
 const contactBtnLg = document.getElementById("contactBtnLg");
 const dropDownMenuContactLg = document.getElementById("dropDownMenuContact");
+const contactBtnSm = document.getElementById("contactBtnSm");
+const dropDownMenuContactSm = document.getElementById("dropDownMenuContactSm");
 
 //script variables
 let hambPressed = false;
+
+contactBtnSm.addEventListener("click", () => {
+  if (dropDownMenuContactSm.classList.contains("hidden")) {
+    dropDownMenuContactSm.classList.remove("hidden");
+  } else {
+    dropDownMenuContactSm.classList.add("hidden");
+  }
+
+});
 
 contactBtnLg.addEventListener("click", () => {
   if (dropDownMenuContactLg.classList.contains("hidden")) {

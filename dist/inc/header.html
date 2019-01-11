@@ -15,8 +15,12 @@
 <body>
   <section id="navBgLg">
     <div class="grid">
+
+      <!-- Logo -->
       <div class="box1"><a href="index.php"><img id="logo" src="./img/1x/logo.png" alt="" /></a></div>
       <div class="box2">
+
+        <!-- Menu for large screens -->
         <nav id="navLg">
           <ul id="menuLg">
             <a href="index.php">
@@ -36,6 +40,8 @@
             </a>
           </ul>
         </nav>
+
+        <!-- Menu for small screens -->
         <nav id="navSm">
           <a href="#">
             <img id="hambBtn" src="./img/1x/HambMenu.png" alt="" />
@@ -52,19 +58,17 @@
       <a href="#">
         <li id="aboutBtnSm" class="navV">Om Oss</li>
       </a>
-      <a href="">
-        <li id="contactBtnSm" class="">Kontakt</li>
-        <div id="dropDownMenuContactSm">
-          <ul class="subMenu">
-            <a href="book.php">
-              <li class="subItem"><span class="subText">Boka tid</span></li>
-            </a>
-            <a href="contact.php">
-              <li class="subItem"><span class="subText">Skicka meddelande</span></li>
-            </a>
-          </ul>
-        </div>
-      </a>
+      <li id="contactBtnSm" class="">Kontakt</li>
+      <div id="dropDownMenuContactSm" class="hidden">
+        <ul class="subMenu">
+          <a href="book.php">
+            <li class="subItem"><span class="subText">Boka tid</span></li>
+          </a>
+          <a href="contact.php">
+            <li class="subItem"><span class="subText">Skicka meddelande</span></li>
+          </a>
+        </ul>
+      </div>
       <a href="portfolio.php">
         <li id="portfolioBtnSm" class="navV">Portfolio</li>
       </a>
@@ -73,6 +77,8 @@
       </a>
     </ul>
   </div>
+
+  <!-- Dropdownmenu for contacts (large screen) -->
   <div id="dropDownMenuContact" class="hidden">
     <ul>
       <a href="book.php">
