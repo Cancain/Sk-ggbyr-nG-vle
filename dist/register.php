@@ -1,4 +1,6 @@
 <?php require_once 'inc/header.html' ?>
+<?php require 'config/db.php'?>
+<?php registerUser() ?>
 
 <div class="gridContact">
     <div id="box1Contact">

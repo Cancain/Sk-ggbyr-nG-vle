@@ -1,8 +1,9 @@
 <meta charset="utf-8">
 <?php require 'inc/header.html' ?>
-<?php require 'config/db.php' ?>
+<?php require 'config/db.php'?>
 <div class="wrapper">
-<?php foreach ($posts as $post) : ?>
+<?php $posts = getPortfolio(); 
+foreach ($posts as $post) : ?>
 
  
 <section class="content-container">
