@@ -177,6 +177,19 @@ li:hover {
 #contactBtnLg {
   cursor: pointer; }
 
+.subMenu {
+  margin-left: -2rem !important; }
+
+.subItem {
+  display: block !important;
+  width: 100vW; }
+
+.subText {
+  margin-left: -2.3rem !important; }
+
+#dropDownMenuContactSm {
+  margin: 0 0 0.5rem 0; }
+
 /* CSS Variables */
 :root {
   --primary:#fff;
