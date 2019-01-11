@@ -4,17 +4,17 @@ const lgMenu = document.getElementById("navLg");
 const icon = document.getElementById("hambBtn");
 const dropDownMenuSm = document.getElementById("dropDownMenuSm");
 const contactBtnLg = document.getElementById("contactBtnLg");
-const dropDownMenuContact = document.getElementById("dropDownMenuContact");
+const dropDownMenuContactLg = document.getElementById("dropDownMenuContact");
 
 //script variables
 let hambPressed = false;
 
 contactBtnLg.addEventListener("click", () => {
-  if (dropDownMenuContact.classList.contains("hidden")) {
-    dropDownMenuContact.classList.remove("hidden");
+  if (dropDownMenuContactLg.classList.contains("hidden")) {
+    dropDownMenuContactLg.classList.remove("hidden");
     window.name = "open";
   } else {
-    dropDownMenuContact.classList.add("hidden");
+    dropDownMenuContactLg.classList.add("hidden");
     window.name = "";
   }
 });
@@ -37,18 +37,24 @@ function setContactDrop() {
 
 //this function loops though the contactPages array
 //hides the dropdown menu if not in any of the contact pages
+//Only shows the relevant dropdown depending on screen-size
 function checkContactPages(contactPages, currentPage, inContact) {
   contactPages.forEach(element => {
     if (currentPage == element) {
       inContact = true;
-      console.log("true");
     }
   });
   if (inContact) {
-    dropDownMenuContact.classList.remove("hidden");
+    if (window.innerWidth >= 768) {
+      dropDownMenuContactLg.classList.remove("hidden");
+    }
+
   }
   else {
-    dropDownMenuContact.classList.add("hidden");
+    if (window.innerWidth >= 768) {
+      dropDownMenuContactLg.classList.add("hidden");
+    }
+
   }
   return inContact;
 }
