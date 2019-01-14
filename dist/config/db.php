@@ -70,7 +70,14 @@ function registerUser(){
     if(!empty($emailErrMsg) && !empty($firstNameErrMsg) && !empty($lastNameErrMsg) && 
     !empty($passWErrMsg) && !empty($confirmPassWErrMsg)){
         //register user
-        $query = 'INSERT INTO USERS (firstName, lastName, email, userName, passW)';
+
+        //Set up the query
+        $query = 'INSERT INTO USERS (firstName, lastName, email, userName, passW) 
+        VALUES (:firstName, :lastName, :email, :userName, :passW)';
+
+        $stmt = 
+
+
     }
 
 
