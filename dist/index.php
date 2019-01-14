@@ -39,8 +39,8 @@
           <img src="img/code2.jpeg" alt="">
             </div>
         <div class="box">
-          <i class="fas fa-info-circle fa-4x"></i>
-          <p class="desc">Om oss</p>
+          <a href="about.php"><i class="fas fa-info-circle fa-4x"></i>
+          <p class="desc">Om oss</p></a>
         </div>
         <div class="boximg">
           <img src="img/code3.jpg" alt="">

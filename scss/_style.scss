@@ -6,8 +6,6 @@
     --dark:#5681a0;
     --light: #fff;
     --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
-
-    --secondaryColor: #b9d1e1;
     --primaryTextColor: #83a8c2;
     --secondaryTextColor: #386789;
     --teritaryColor: #215173;
@@ -22,14 +20,17 @@ html{
 }
 
 body {
-    background: var(--secondaryColor);
+    background: $secondaryColor;
     color: $primaryColor;   
   }
   
-  a{
-      color: $primaryTextColor;
+ body a {
+    color: $secondaryTextColor;
   }
-
+body a:hover {
+    color: lighten($primaryTextColor, 20%);
+    @include easeOut();
+}
 
 .btn {
     background: $secondaryTextColor;
@@ -42,8 +43,6 @@ body {
     background: lighten($primaryTextColor, 20%);
     color: var(--dark);
     @include easeOut();
-
-
 }
 
 img{
@@ -56,6 +55,7 @@ img{
     align-items: start;
     justify-content: center;
 }
+
 
 /* Top Container */
 
