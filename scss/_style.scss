@@ -25,9 +25,12 @@ body {
   }
   
  body a {
-    color: $primaryColor;
+    color: $secondaryTextColor;
   }
-
+body a:hover {
+    color: lighten($primaryTextColor, 20%);
+    @include easeOut();
+}
 
 .btn {
     background: $secondaryTextColor;
@@ -40,8 +43,6 @@ body {
     background: lighten($primaryTextColor, 20%);
     color: var(--dark);
     @include easeOut();
-
-
 }
 
 img{
