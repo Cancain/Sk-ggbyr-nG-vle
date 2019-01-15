@@ -27,6 +27,7 @@ body {
  body a {
     color: $secondaryTextColor;
   }
+
 body a:hover {
     color: lighten($primaryTextColor, 20%);
     @include easeOut();
@@ -49,6 +50,12 @@ img{
     max-width: 100%;
 }
 
+.gray {
+    font-size: 1.3rem;
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: $contentText;
+ }
 .wrapper {
     display: grid;
     grid-gap: 20px;

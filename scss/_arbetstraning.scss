@@ -10,8 +10,10 @@
       grid-template-areas: 
       'content content'
       'content-box-a content-box-b';
+   }
 }
-}
+
+
 
 .content{
     grid-area: content;
@@ -24,6 +26,7 @@
    //  justify-content: center;
     box-shadow: var(--shadow);
 }
+
 
 .content h1{
    font-size: 2rem;

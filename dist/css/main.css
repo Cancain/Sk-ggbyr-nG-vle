@@ -105,6 +105,29 @@ form {
     cursor: pointer;
     color: white; }
 
+.contactBg {
+  grid-gap: 20px;
+  display: grid; }
+  @media (min-width: 768px) {
+    .contactBg {
+      margin-left: 0 0;
+      margin-right: 0 0;
+      margin-top: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 945px;
+      width: 945px; } }
+
+.contactBox {
+  background: var(--primary);
+  text-decoration: none;
+  padding: 1.5rem;
+  box-shadow: var(--shadow); }
+
+.contactBox .icon {
+  width: 50;
+  text-align: center;
+  padding-top: 7rem; }
+
 .navH {
   display: inline;
   margin-right: 0.5rem; }
@@ -245,6 +268,12 @@ body a:hover {
 
 img {
   max-width: 100%; }
+
+.gray {
+  font-size: 1.3rem;
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: #747474; }
 
 .wrapper {
   display: grid;
