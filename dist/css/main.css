@@ -338,7 +338,11 @@ img {
   grid-area: top-box-a; }
 
 .top-box-b {
-  grid-area: top-box-b; }
+  grid-area: top-box-b;
+  padding-bottom: 1.2rem; }
+
+.top-box-b a {
+  padding-bottom: 0.5rem; }
 
 /* Boxes */
 .boxes {

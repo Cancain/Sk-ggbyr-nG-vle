@@ -16,9 +16,10 @@
           <a href="" class="btn">Hitta hit!</a>
         </div>
         <div class="top-box top-box-b">
-          <h4>Ett äpple</h4>
-          <p class="bigger">Snel hest</p>
-          <a href="" class="btn">Go</a>
+          <h4>Följ oss!</h4>
+          <a href="https://sv-se.facebook.com/skaggbyran/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/skaggbyran/?hl=sv" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.youtube.com/channel/UCZIEICe8S2xMw5l5rDf5X3A/featured" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
         </div>
       </section>
 
