@@ -1,7 +1,6 @@
 .content-container {
     @include tabletUp {
       display: grid;
-      margin-top: 20px;
       grid-gap: 20px;
       max-width: 945px;
       width: 945px;

@@ -59,12 +59,13 @@ img{
     color: $contentText;
  }
 .wrapper {
-    display: grid;
     grid-gap: 20px;
     padding: 0 0;
     @include tabletUp{
+    display: grid;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 945px;
 }
 }
@@ -74,7 +75,6 @@ img{
 .top-container {
       @include tabletUp {
         display: grid;
-        margin-top: 20px;
         grid-gap: 20px;
         max-width: 945px;
         width: 945px;
@@ -139,6 +139,10 @@ img{
     padding-bottom: 0.5rem;
 }
 
+.social {
+    
+}
+
 /* Boxes */
 
 .boxes {
@@ -151,7 +155,9 @@ img{
         max-width: 945px;
         width: 945px;
      }
-  
+  @include tabletDown{
+      margin-top:20px;
+  }
 }
 
 .box {
@@ -200,7 +206,6 @@ img{
         grid-template-areas:
         'showcase showcase'
         'top-box-a top-box-b';
-        margin-top: 20px;
     }
     
     .showcase h1 {
