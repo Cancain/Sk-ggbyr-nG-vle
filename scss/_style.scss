@@ -22,7 +22,9 @@ html{
 body {
     background: $secondaryColor;
     color: $primaryColor;   
-  }
+    margin: 0 0;
+    padding: 0 0;
+}
   
  body a {
     color: $secondaryTextColor;
@@ -59,15 +61,14 @@ img{
 .wrapper {
     display: grid;
     grid-gap: 20px;
-    align-items: start;
-    justify-content: center;
+    padding: 0 0;
+    @include tabletUp{
+    margin-left: auto;
+    margin-right: auto;
+    width: 945px;
+}
 }
 
-#map {
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  }
 /* Top Container */
 
 .top-container {

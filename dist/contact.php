@@ -5,7 +5,8 @@
   <div class="contactBox">
 <h1>Kontakta oss!</h1>
 <p class="gray">Har du några frågor eller funderingar som vi kan besvara?</p>
-<p class="gray">Tveka inte att skicka oss ett mail via formuläret till höger, så återkopplar vi så snart som möjligt.</p>
+<p class="gray bgsc">Tveka inte att skicka oss ett mail via formuläret till höger, så återkopplar vi så snart som möjligt.</p>
+<p class="gray smsc">Tveka inte att skicka oss ett mail via formuläret nedan, så återkopplar vi så snart som möjligt.</p>
 <div class="icon"><i class="fas fa-at fa-5x"></i></div>
   </div>
   <div>
