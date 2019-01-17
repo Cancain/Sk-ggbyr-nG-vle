@@ -40,8 +40,9 @@ function registerUser(){
     $passW = htmlspecialchars(trim($_POST['passW']));
     $confirmPassW = htmlspecialchars(trim($_POST['confirmPassW']));
 
-    $query = 'INSERT INTO USERS '
-    }
+    $query = 'INSERT INTO USERS ';
+    
+}
 ?>
 
 
