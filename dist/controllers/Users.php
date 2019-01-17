@@ -82,10 +82,9 @@ function registerUser(){
         empty($passWErrMsg) && empty($confirmPassWErrMsg)){
                 //Add to database and redirect to login page
                 die($data['passW']);
+                
             } else {
-                //Return to register page with the errors
-                
-                
+                //Return to register page with the errors                
                 return $data;
             }
 
