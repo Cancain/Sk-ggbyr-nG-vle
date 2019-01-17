@@ -29,6 +29,7 @@ function registerUser(){
     $lastNameErrMsg = '';
     $passWErrMsg = '';
     $confirmPassWErrMsg = '';
+    $userNameErr = '';
 
     //Set DSN
     $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME;
@@ -57,6 +58,10 @@ function registerUser(){
     if(empty($lastName)){
         $lastNameErrMsg = 'Efternamn kan inte vara tomt';
     }
+    //Validate username
+    if(empty($userName)){
+        $userNameErr = 'Användarnamnet kan inte vara tomt';
+    }
     //Validate password
     if(empty($passW)){
         $passWErrMsg = 'Lösenordet kan inte vara tomt';
@@ -75,7 +80,13 @@ function registerUser(){
         $query = 'INSERT INTO USERS (firstName, lastName, email, userName, passW) 
         VALUES (:firstName, :lastName, :email, :userName, :passW)';
 
-        $stmt = 
+        $stmt = $connection->prepare($query);
+
+        $stmt->bindParam(':firstName', $firstName, PDO::PARAM_STR);
+        $stmt->bindParam(':lastName', $lastName, PDO::PARAM_STR);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->bindParam(':userName', $userName, PDO::PARAM_STR);
+        $stmt->bindParam(':passW', $passW, PDO::PARAM_STR);
 
 
     }

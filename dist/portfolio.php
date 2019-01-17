@@ -15,9 +15,6 @@ foreach ($posts as $post) : ?>
 </section>
 
 
-
-
-
 <?php endforeach; ?>
 </div>
 
