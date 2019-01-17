@@ -103,21 +103,27 @@
   }
 
   .subMenu{
-    margin-left: -2rem !important;
+    margin-left: -3rem !important;
   }
 
   .subItem{
     display: block !important;
-    opacity: 0.8; 
-    // width: 95vW;
+    opacity: 0.9; 
+    height: 2rem;
+    line-height: 2rem;
+    //width: 95vW;
+
   }
 
   .subText{
-    margin-left: -2.3rem !important;
+    margin-left: 1rem !important;
+    padding-bottom: 20px;
+    font-size: 0.8rem !important;
   }
 
   #dropDownMenuContactSm {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
 
   #userMenu{

@@ -53,9 +53,8 @@ img{
 }
 
 .gray {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 0;
-    font-size: 0.9rem;
     color: $contentText;
  }
 .wrapper {
@@ -140,7 +139,29 @@ img{
 }
 
 .social {
-    
+    @include tabletDown{
+        display: none;
+    }
+}
+.social ul{
+    list-style: none;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;    
+}
+.social li{
+    padding-bottom: 0.5rem;
+}
+
+.socialSm {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    @include tabletUp{
+        display: none;
+    }
+}
+.socialSm a {
+margin: 0 10px 0 10px;
 }
 
 /* Boxes */
