@@ -29,7 +29,7 @@
             <a href="https://www.youtube.com/channel/UCZIEICe8S2xMw5l5rDf5X3A/featured" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
             </li>
           </ul>
-        </div>
+        </div>  
         <div class="socialSm">
         <a href="https://sv-se.facebook.com/skaggbyran/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
         <a href="https://www.instagram.com/skaggbyran/?hl=sv" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
