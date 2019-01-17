@@ -32,8 +32,8 @@
         <textarea class="formMsg" name="message" id="" cols="30" rows="8"><?php echo isset($_POST['message']) ? $message : '' ?></textarea><br />
         <button class="formBtn" type="submit" name="submit">Skicka</button>
       </div>
-      <div id="errorMsg">
-        <?php echo "<p>$msg</p>" ?>
+      <div class="errorMsg">
+        <?php if(!empty($msg)) echo "<span class='warning'>$msg</span>"; ?>
       </div>
     </form>
   </div>
