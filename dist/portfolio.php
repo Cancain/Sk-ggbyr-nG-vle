@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <?php require 'inc/header.html' ?>
-<?php require 'config/db.php'?>
+<?php require 'controllers/portfolio.php'?>
 <div class="wrapper">
 <?php $posts = getPortfolio(); 
 foreach ($posts as $post) : ?>
@@ -13,9 +13,6 @@ foreach ($posts as $post) : ?>
         <p><?php echo utf8_encode($post->body); ?></p>
     </header>
 </section>
-
-
-
 
 
 <?php endforeach; ?>
