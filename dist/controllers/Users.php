@@ -112,4 +112,62 @@ function registerUser(){
     }
 }
 
+function logIn() {
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        //Setting up DSN
+        $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME;
+        $connection = new PDO($dsn, DB_USER, DB_PASSWORD);
+        $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+        $connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
+        $user = '';
+        $password = '';
+        $userErr = '';
+        $passwordErr = '';
+
+        //Sanitize the post data
+        $_POST(filter_input_array, INPUT_POST, FILTER_SANITIZE_STRING);
+
+        $user = htmlspecialchars(trim($_POST['user']));
+        $password = htmlspecialchars(trim($_POST['password'])); 
+
+        //Validate username
+        if(empty($user)){
+            $userErr = 'Du har inte angett något användarnamn';
+        }
+
+        //Validate password
+        if(empty($password)){
+            $passwordErr = 'Du har inte angett något lösenord';
+        }
+
+        //Check for matching users and password
+
+
+        $data = [
+            'user' => $user,
+            'password' => $password,
+            'userErr' => $userErr,
+            'passwordErr' => $passwordErr
+        ];
+    
+        return $data;
+
+    } else {
+        $data = [
+            'user' => '',
+            'password' => '',
+            'userErr' => '',
+            'passwordErr' => ''
+        ];
+    
+        return $data;
+    }
+}
+
+function findUserByUserName(){
+    $query = 'SELECT * FROM users WHERE userName = :user';
+    $stmt = $connection->prepare($query);
+}
+
 
