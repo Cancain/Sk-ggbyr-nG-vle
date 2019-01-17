@@ -56,3 +56,49 @@
       color: white;
     }
   }
+
+
+  .contactBg {
+    @include tabletUp(){
+       
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 945px;
+    width: 945px;
+     }
+     grid-gap: 20px;
+     display: inline-grid;
+     margin-left: 0 0;
+     margin-right: 0 0;
+     max-width: 100vw;
+    }
+     .contactBox {
+      background: var(--primary);
+      text-decoration: none;
+      padding: 3rem;
+      box-shadow: var(--shadow);
+      margin: 0 0;
+      align-items: start;
+      justify-content: center;
+
+      }
+  
+
+  .contactBox .icon{
+  width:50;
+  text-align:center;
+  @include tabletUp {
+  padding-top: 7rem;
+  }
+}
+
+.contactBox .smsc{
+  @include tabletUp {
+    display: none;
+}
+}
+.contactBox .bgsc{
+  @include tabletDown {
+    display: none;
+}
+}
+

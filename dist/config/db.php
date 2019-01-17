@@ -44,60 +44,7 @@ function registerUser(){
     $passW = htmlspecialchars(trim($_POST['passW']));
     $confirmPassW = htmlspecialchars(trim($_POST['confirmPassW']));
 
-    //Validate email
-    if(empty($email)){
-        $emailErrMsg = 'Email kan inte vara tomt';
-    } else {
-        //check for duplicate email
-    }
-    //Validate first name
-    if(empty($firstName)){
-        $firstNameErrMsg = 'Förnamn kan inte var tomt';
-    }
-    //Validate last name
-    if(empty($lastName)){
-        $lastNameErrMsg = 'Efternamn kan inte vara tomt';
-    }
-    //Validate username
-    if(empty($userName)){
-        $userNameErr = 'Användarnamnet kan inte vara tomt';
-    }
-    //Validate password
-    if(empty($passW)){
-        $passWErrMsg = 'Lösenordet kan inte vara tomt';
-    }
-    //Validate confirm password
-    if(empty($confirmPassW)){
-        $confirmPassWErrMsg = 'Du måste bekräfta ditt lösenord';
-    }
-
-    //Check that errors are empty
-    if(!empty($emailErrMsg) && !empty($firstNameErrMsg) && !empty($lastNameErrMsg) && 
-    !empty($passWErrMsg) && !empty($confirmPassWErrMsg)){
-        //register user
-
-        //Set up the query
-        $query = 'INSERT INTO USERS (firstName, lastName, email, userName, passW) 
-        VALUES (:firstName, :lastName, :email, :userName, :passW)';
-
-        $stmt = $connection->prepare($query);
-
-        $stmt->bindParam(':firstName', $firstName, PDO::PARAM_STR);
-        $stmt->bindParam(':lastName', $lastName, PDO::PARAM_STR);
-        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-        $stmt->bindParam(':userName', $userName, PDO::PARAM_STR);
-        $stmt->bindParam(':passW', $passW, PDO::PARAM_STR);
-
-
-    }
-
-
-    echo $msg;
-    echo $emailErrMsg;
-    echo $firstNameErrMsg;
-    echo $lastNameErrMsg;
-    echo $passWErrMsg;
-    echo $confirmPassWErrMsg;
+    $query = 'INSERT INTO USERS ';
     
 }
 ?>

@@ -1,7 +1,18 @@
 <?php require_once 'inc/header.html' ?>
 <?php require_once 'inc/bookController.php' ?>
+<div class="wrapper">
 
-<div class="gridContact">
+<div class="contactBg">
+  <div class="contactBox">
+  <h1>Boka tid!</h1>
+<p class="gray bgsc">Använd formuläret till höger för att boka en tid för möte med oss.</p>
+<p class="gray smsc">Använd formuläret nedan för att boka en tid för möte med oss.</p>
+<p class="gray">Vänligen observera att din tidsbokning är en förfrågan eller förslag på tid.</p>
+<p class="gray">Vi återkopplar med bekräftelse så snart vi kan.</p>
+<div class="icon"><i class="fas fa-clipboard-list fa-5x"></i></div>
+  </div>
+  <div>
+  <div class="gridContact">
   <div id="box1Contact">
   <form action="" autocomplete="off" method="POST">
       <div class="formBox">
@@ -35,6 +46,12 @@
     </form>
   </div>
 </div>
+  </div>
+</div>
+
+
+</div>
+
 <?php require_once 'inc/footer.html' ?>
 
 

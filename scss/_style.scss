@@ -22,11 +22,14 @@ html{
 body {
     background: $secondaryColor;
     color: $primaryColor;   
-  }
+    margin: 0 0;
+    padding: 0 0;
+}
   
  body a {
     color: $secondaryTextColor;
   }
+
 body a:hover {
     color: lighten($primaryTextColor, 20%);
     @include easeOut();
@@ -49,20 +52,29 @@ img{
     max-width: 100%;
 }
 
+.gray {
+    font-size: 1.3rem;
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: $contentText;
+ }
 .wrapper {
-    display: grid;
     grid-gap: 20px;
-    align-items: start;
-    justify-content: center;
+    padding: 0 0;
+    @include tabletUp{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 945px;
 }
-
+}
 
 /* Top Container */
 
 .top-container {
       @include tabletUp {
         display: grid;
-        margin-top: 20px;
         grid-gap: 20px;
         max-width: 945px;
         width: 945px;
@@ -115,13 +127,20 @@ img{
 
 .top-box .bigger{
     font-size: 2rem;
-
 }
 .top-box-a {
     grid-area: top-box-a;
 }
 .top-box-b {
     grid-area: top-box-b;
+    padding-bottom: 1.2rem;
+}
+.top-box-b a{
+    padding-bottom: 0.5rem;
+}
+
+.social {
+    
 }
 
 /* Boxes */
@@ -136,7 +155,9 @@ img{
         max-width: 945px;
         width: 945px;
      }
-  
+  @include tabletDown{
+      margin-top:20px;
+  }
 }
 
 .box {
@@ -185,7 +206,6 @@ img{
         grid-template-areas:
         'showcase showcase'
         'top-box-a top-box-b';
-        margin-top: 20px;
     }
     
     .showcase h1 {

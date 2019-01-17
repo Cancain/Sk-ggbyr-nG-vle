@@ -1,7 +1,6 @@
 .content-container {
     @include tabletUp {
       display: grid;
-      margin-top: 20px;
       grid-gap: 20px;
       max-width: 945px;
       width: 945px;
@@ -10,7 +9,7 @@
       grid-template-areas: 
       'content content'
       'content-box-a content-box-b';
-}
+   }
 }
 
 .content{
@@ -24,6 +23,7 @@
    //  justify-content: center;
     box-shadow: var(--shadow);
 }
+
 
 .content h1{
    font-size: 2rem;
