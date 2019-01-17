@@ -10,25 +10,29 @@
         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
             <div class="formBox">
                 <label>Förnamn</label><br>
-                <input class="formField" type="text" name="firstName">
+                <input class="formField" type="text" name="firstName"
+                value="<?php echo $data['firstName']?>">
                 <span><?php echo $data['firstNameErrMsg'] ?></span>
             </div>
 
             <div class="formBox">
                 <label>Efternamn</label><br>
-                <input class="formField" type="text" name="lastName">
+                <input class="formField" type="text" name="lastName"
+                value="<?php echo $data['lastName']?>">
                 <span><?php echo $data['lastNameErrMsg'] ?></span>
             </div>
 
             <div class="formBox">
                 <label>Email</label><br>
-                <input class="formField" type="email" name="email">
+                <input class="formField" type="email" name="email"
+                value="<?php echo $data['email']?>">
                 <span><?php echo $data['emailErrMsg'] ?></span>
             </div>
 
             <div class="formBox">
                 <label>Användarnamn</label><br>
-                <input class="formField" type="text" name="userName">
+                <input class="formField" type="text" name="userName"
+                value="<?php echo $data['userName']?>">
                 <span><?php echo $data['userNameErrMsg'] ?></span>
             </div>
 
