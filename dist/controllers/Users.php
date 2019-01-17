@@ -81,8 +81,13 @@ function registerUser(){
         if(empty($firstNameErrMsg) && empty($lastNameErrMsg) && empty($userNameErrMsg) && empty($emailErrMsg) && 
         empty($passWErrMsg) && empty($confirmPassWErrMsg)){
                 //Add to database and redirect to login page
-                die($data['passW']);
                 
+
+                $query = 'INSERT INTO users (userName, firstName, lastName, email, password)
+                        VALUES (:userName, :firstName, :lastName, :email, :password)';
+                $stmt = $connection->prepare($query);
+                $stmt->execute(['userName' => $userName, 'firstName' => $firstName, 'lastName' => $lastName, 'email' => $email, 'password' => $passW]);
+                die($data['passW']);
             } else {
                 //Return to register page with the errors                
                 return $data;
