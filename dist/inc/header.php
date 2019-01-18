@@ -34,10 +34,10 @@
       <?php if($_SESSION): ?>
       <div class="userBox">
         <ul id="userMenu">
-          <a href="logIn.php">
+          <a href="profile.php">
             <li class="navH"><?php echo $_SESSION['userName']?></li>
           </a>
-          <a href="register.php">
+          <a href="logout.php">
             <li class="navH">Logga ut</li>
           </a>
         </ul>

@@ -1,7 +1,6 @@
 <?php require_once 'inc/header.php' ?>
 <?php require 'controllers/users.php';
 $data = logIn();
-
 ?>
 <form action="" method="post">
     <div class="formBox">

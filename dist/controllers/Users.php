@@ -2,9 +2,6 @@
 
 <?php
 
-
-
-
 function registerUser(){
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
@@ -197,6 +194,11 @@ function logInUser($user){
     $_SESSION['email'] = $user->email;
     $_SESSION['isAdmn'] = $user->isAdmin;
     $_SESSION['loggedIn'] = true;
+}
+
+function logOutUser(){
+    session_unset();
+    session_destroy();
 }
 
 
