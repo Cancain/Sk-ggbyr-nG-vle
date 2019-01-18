@@ -147,8 +147,8 @@ function logIn() {
             if(password_verify($password, $foundUser->password)){
                 //check that all errors are empty
                 if(empty($userErr)){
-                    //make session var for logged in user               
-                echo 'jepp';
+                    //make session var for logged in user
+                    logInUser($foundUser);
                 } else {
                     $userErr = 'Något gick fel, försök igen senare';
                 }
@@ -187,6 +187,16 @@ function findUserByUserName($user, $connection){
     $stmt->execute(['user' => $user]);
     $user = $stmt->fetch();
     return $user;
+}
+
+function logInUser($user){
+    $_SESSION['userId'] = $user->id;
+    $_SESSION['userName'] = $user->userName;
+    $_SESSION['firstName'] = $user->firstName;
+    $_SESSION['lastName'] = $user->lastName;
+    $_SESSION['email'] = $user->email;
+    $_SESSION['isAdmn'] = $user->isAdmin;
+    $_SESSION['loggedIn'] = true;
 }
 
 

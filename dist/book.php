@@ -1,4 +1,4 @@
-<?php require_once 'inc/header.html' ?>
+<?php require_once 'inc/header.php' ?>
 <?php require_once 'inc/bookController.php' ?>
 <div class="wrapper">
 

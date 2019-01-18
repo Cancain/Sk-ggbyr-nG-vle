@@ -13,10 +13,12 @@
 </head>
 
 <body>
+  <?php session_start(); ?>
   <section id="navBgLg">
     <div class="grid">
 
       <!-- User section -->
+      <?php if(!$_SESSION): ?>
       <div class="userBox">
         <ul id="userMenu">
           <a href="logIn.php">
@@ -27,6 +29,21 @@
           </a>
         </ul>
       </div>
+      <?php endif; ?>
+
+      <?php if($_SESSION): ?>
+      <div class="userBox">
+        <ul id="userMenu">
+          <a href="logIn.php">
+            <li class="navH"><?php echo $_SESSION['userName']?></li>
+          </a>
+          <a href="register.php">
+            <li class="navH">Logga ut</li>
+          </a>
+        </ul>
+      </div>
+      <?php endif; ?>
+
 
       <!-- Logo -->
       <div class="box1"><a href="index.php"><img id="logo" src="./img/1x/logo.png" alt="" /></a></div>

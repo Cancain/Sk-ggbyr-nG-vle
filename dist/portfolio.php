@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<?php require 'inc/header.html' ?>
+<?php require_once 'inc/header.php' ?>
 <?php require 'controllers/portfolio.php'?>
 <div class="wrapper">
 <?php $posts = getPortfolio(); 
