@@ -123,11 +123,10 @@ function logIn() {
         $user = '';
         $password = '';
         $userErr = '';
-        $passwordErr = '';
 
         //Sanitize the post data
-        $_POST(filter_input_array, INPUT_POST, FILTER_SANITIZE_STRING);
-
+        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        
         $user = htmlspecialchars(trim($_POST['user']));
         $password = htmlspecialchars(trim($_POST['password'])); 
 
@@ -138,17 +137,35 @@ function logIn() {
 
         //Validate password
         if(empty($password)){
-            $passwordErr = 'Du har inte angett något lösenord';
+            $userErr = 'Du har inte angett något lösenord';
         }
 
         //Check for matching users and password
+        $foundUser = findUserByUserName($user, $connection);
 
+        if($foundUser){
+            if(password_verify($password, $foundUser->password)){
+                //check that all errors are empty
+                if(empty($userErr)){
+                    //make session var for logged in user               
+                echo 'jepp';
+                } else {
+                    $userErr = 'Något gick fel, försök igen senare';
+                }
+                
+            } else {
+                //return to login with errors
+                $userErr = 'Fel lösenord eller användare';
+            }
+        } else {
+            //return to login with errors
+            $userErr = 'Fel lösenord eller användare';
+        }
 
         $data = [
             'user' => $user,
             'password' => $password,
-            'userErr' => $userErr,
-            'passwordErr' => $passwordErr
+            'userErr' => $userErr
         ];
     
         return $data;
@@ -157,17 +174,19 @@ function logIn() {
         $data = [
             'user' => '',
             'password' => '',
-            'userErr' => '',
-            'passwordErr' => ''
+            'userErr' => ''
         ];
     
         return $data;
     }
 }
 
-function findUserByUserName(){
+function findUserByUserName($user, $connection){
     $query = 'SELECT * FROM users WHERE userName = :user';
     $stmt = $connection->prepare($query);
+    $stmt->execute(['user' => $user]);
+    $user = $stmt->fetch();
+    return $user;
 }
 
 
