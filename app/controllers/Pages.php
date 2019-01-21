@@ -18,7 +18,6 @@ class Pages extends Controller{
 
     public function contact(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            die('there');
             //Sanitize data
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
@@ -65,22 +64,20 @@ class Pages extends Controller{
                   $data['errMsg'] = 'Bokningsönskan skickad';
                   redirect('pages/contact');
                 } else {
+                    die('here');
                   $data['errMsg'] = 'Något gick fel, försök igen senare';
-                  redirect('pages/contact');
+                  $this->view('pages/contact', $data);
                 }
             }
         } else {
-            die('here');
             $data = [
                 'name' => '',
                 'email' => '',
                 'message' => '',
                 'errMsg' => ''
             ];
-            redirect('pages/contact');
+            $this->view('pages/contact', $data);
         }
-
-
     }
 
     public function book(){
