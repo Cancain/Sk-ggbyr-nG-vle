@@ -1,0 +1,40 @@
+@import "grid";
+@import "config";
+@import "contact";
+@import "header";
+@import "style";
+@import "footer";
+@import "arbetstraning";
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: $secondaryColor;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  @include tabletUp() {
+    color: $primaryTextColor;
+  }
+}
+
+
+//Controllers
+
+.hidden {
+  display: none;
+}
+
+#spacing {
+  letter-spacing: -2px;
+}
+
+
+
+

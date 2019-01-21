@@ -1,0 +1,75 @@
+@import 'config.scss';
+
+.grid {
+  padding: 0;
+  margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.05fr 0.2fr;
+    @include tabletUp() {
+      grid-template-columns: 0.4fr 0.6fr 1.5fr 0.5fr;
+      padding-top: 1rem;
+      grid-template-rows: 0.02fr 0.2fr;
+    }
+  }
+  
+  .box1 {
+      grid-column: 2/4;
+      grid-row: 2/3;
+    @include tabletUp() {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+  
+  .box2 {
+    grid-column: 3;
+    grid-row: 2;
+  
+    @include tabletUp() {
+      grid-column: 3/5;
+    }
+  }
+
+  .userBox {
+    display: none;
+    @include tabletUp() {
+      display: inline;
+      grid-row: 1;
+      grid-column: 3;
+    }
+  }
+  
+  //GridContact
+  
+  .gridContact {
+    @include tabletUp() {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  
+  #box1Contact {
+    @include tabletUp() {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+  
+  .box2Contact {
+    @include tabletUp() {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+  .box3Contact {
+    @include tabletUp() {
+      grid-column: 2;
+      grid-row: 3;
+    }
+  }
+  
+  #mainContent {
+    color: black;
+  }

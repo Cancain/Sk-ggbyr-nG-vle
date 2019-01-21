@@ -1,0 +1,132 @@
+//NavBar
+
+.navH {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  #navLg {
+    display: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  
+    @include tabletUp() {
+      display: inline;
+    }
+  }
+  
+  #navBgLg {
+    background: $primaryColor;
+    box-sizing: border-box;
+  }
+  
+  #hambBtn {
+    position: absolute;
+    z-index: 3;
+    right: 25px;
+    top: 8px;
+    width: 40px;
+  
+    @include tabletUp() {
+      display: none;
+    }
+  }
+  
+  #menuSm {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    box-shadow: var(--shadow);
+
+  }
+
+  #menuSm li{
+    border-bottom: lighten($primaryColor, 25%) solid 1px;
+    background-color: lighten($secondaryColor, 10%) ; 
+    color: #333333;
+    font-weight: 500;
+  }
+
+  #menuLg {
+    margin: 3.3rem 0 0 0;
+  }
+  
+  li {
+    color: lighten($primaryTextColor, 20%);
+  }
+  
+  li:hover {
+    color: $secondaryTextColor;
+    @include easeOut();
+  }
+  
+  #dropDownMenuSm {
+    background: $primaryColor;
+  }
+  
+  #logo {
+    width: 280px;
+    opacity: 0.75;
+    @include tabletUp() {
+      width: 400px;
+    }
+  }
+
+  #dropDownMenuContact{
+      background: $primaryColor;
+      color: lighten($primaryTextColor, 20%);
+      text-align: center;
+      margin: 0;
+      padding: 0 0 1rem 0;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      & ul{
+        margin: 0;
+        cursor: pointer;
+        list-style-type: none;
+      }
+
+      & li {
+          display: inline;
+          margin: 0 0.5rem 0 0;
+      }
+  }
+
+  #contactBtnLg {
+      cursor: pointer;
+  }
+
+  .subMenu{
+    margin-left: -3rem !important;
+  }
+
+  .subItem{
+    display: block !important;
+    opacity: 0.9; 
+    height: 2rem;
+    line-height: 2rem;
+    //width: 95vW;
+
+  }
+
+  .subText{
+    margin-left: 1rem !important;
+    padding-bottom: 20px;
+    font-size: 0.8rem !important;
+  }
+
+  #dropDownMenuContactSm {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  #userMenu{
+    float: right;
+    margin: 0 25% 0 0;
+  }
