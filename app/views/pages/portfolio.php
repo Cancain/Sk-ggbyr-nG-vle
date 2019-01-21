@@ -1,8 +1,7 @@
 <meta charset="utf-8">
 <?php require APPROOT . '/views/inc/header.php'?>
 <div class="wrapper">
-<?php $posts = getPortfolio(); 
-foreach ($posts as $post) : ?>
+<?php foreach ($data as $post) : ?>
 
  
 <section class="content-container">

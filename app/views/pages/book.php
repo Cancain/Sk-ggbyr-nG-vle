@@ -17,31 +17,33 @@
       <div class="formBox">
         <label for="">Namn</label><br />
         <input class="formField" type="text" name="name" id="" 
-        value="<?php echo isset($_POST['name']) ? $name : '' ?>" />
+        value="<?php echo $data['name']?>" />
       </div>
 
       <div class="formBox">
         <label for="">Datum</label><br />
         <input class="formField" type="text" name="date" id="date" 
-        value="<?php echo isset($_POST['date']) ? $date : '' ?>" />
+        value="<?php echo $data['date']?>" />
       </div>
 
       <div class="formBox">
         <label for="">Email</label><br />
-        <input class="formField" type="text" name="email" id="" 
-        value="<?php echo isset($_POST['email']) ? $email : '' ?>"/>
+        <input class="formField" type="email" name="email" id="" 
+        value="<?php echo $data['email']?>"/>
       </div>
 
       <div class="formBox">
         <label for="">Meddelande</label><br />
-        <textarea class="formMsg" name="message" id="" cols="30" rows="8"><?php echo isset($_POST['message']) ? $message : '' ?></textarea><br />
+        <textarea class="formMsg" name="message" id="" cols="30" rows="8"><?php echo $data['message']?></textarea><br />
         <button class="formBtn" type="submit" name="submit">Skicka</button>
       </div>
       <div class="errorMsg">
-      <?php if(!empty($msg)) echo "<span class='warning'>$msg</span>"; ?>
+      <?php if(!empty($data['errMsg'])) : ?>
+      <span class="warning"><?php echo $data['errMsg'] ?></span>      
+      <?php endif; ?>
       </div>
-      <script src="../node_modules/js-datepicker/dist/datepicker.min.js"></script>
-      <script src="./js/calendar.js"></script>
+      <!-- <script src="../node_modules/js-datepicker/dist/datepicker.min.js"></script> -->
+      <!-- <script src="./js/calendar.js"></script> -->
     </form>
   </div>
 </div>
