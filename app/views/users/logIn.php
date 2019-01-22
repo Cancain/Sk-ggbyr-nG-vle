@@ -10,7 +10,9 @@
     </div>
     <input type="submit" value="Logga in">
     <a href="register.php">Har du inget konto? Registrera här</a><br>
-    <span><?php echo $data['userErr'] ?></span>
+    <?php if(!empty($data['userErr'])):?>
+        <span class="warning"><?php echo $data['userErr'] ?></span>
+    <?php endif;?>
 </form>
 
 

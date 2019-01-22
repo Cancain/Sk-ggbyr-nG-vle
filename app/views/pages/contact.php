@@ -32,11 +32,11 @@
               <button class="formBtn" type="submit" name="submit">Skicka</button>
             </div>
             <div class="errorMsg">
-
+              <?php if(!empty($data['errMsg'])): ?>
               <span class="warning">
                 <?php echo $data['errMsg'] ?>
               </span>
-
+              <?php endif ?>
             </div>
           </form>
         </div>

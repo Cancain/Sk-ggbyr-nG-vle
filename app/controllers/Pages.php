@@ -43,42 +43,45 @@ class Pages extends Controller{
             if(empty($data['message'])) {
                 $data['errMsg'] = 'Snälla, skicka inte oss ett tomt meddelande';
             }
+            
 
             //Check that the error is empty
             if(empty($data['errMsg'])) {
                 $toEmail = "eriksson.tomas@gmail.com";
                 $subject = "Meddelande från" . $data['name'];
-                $body = '<h2>Bokningsönskan<h2>
+                $body = '<h2>Meddelande från Skäggbyrån gävle <h2>
                 <h4>Namn</h4><p>'.$data['name'].'</p>
                 <h4>Email</h4><p>'.$data['email'].'</p>
                 <h4>Meddelande</h4><p>'.$data['message'].'</p>';
-          
                 //Email headers
                 $headers = "MIME-Version: 1.0" ."\r\n";
                 $headers .= "Content-Type:text/hmtl;charset=UTF-8" . "\r\n";
-          
+                
                 //additional headers
                 $headers .= "From: " .$data['name']. "<".$data['email'].">"."\r\n";
-          
+                
                 if(mail($toEmail, $subject, $body, $headers)){
                   $data['errMsg'] = 'Bokningsönskan skickad';
                   redirect('pages/contact');
                 } else {
-                    die('here');
                   $data['errMsg'] = 'Något gick fel, försök igen senare';
                   $this->view('pages/contact', $data);
                 }
-            }
-        } else {
-            $data = [
-                'name' => '',
-                'email' => '',
-                'message' => '',
-                'errMsg' => ''
-            ];
+            } else {
+
             $this->view('pages/contact', $data);
+        
         }
+    } else {
+        $data = [
+            'name' => '',
+            'email' => '',
+            'message' => '',
+            'errMsg' => ''
+        ];
+        $this->view('pages/contact', $data);
     }
+}
 
     public function book(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
