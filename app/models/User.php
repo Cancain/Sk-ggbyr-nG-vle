@@ -24,6 +24,43 @@ class User{
         } else {
             return false;
         }
+    }
 
+    public function getUserFromUserName($user){
+
+        //set up sql query
+        $this->db->query('SELECT * FROM users
+                            WHERE userName = :userName');
+
+        //bind parameters
+        $this->db->bind('userName', $user);
+
+        //set the found user to a variable
+        $foundUser = $this->db->single();
+
+        //return found user if found else return false
+        if($foundUser){
+            return $foundUser;
+        } else {
+            return false;
+        }
+    }
+
+    public function getUserById($id){
+        //Set up sql query
+        $this->db->query('SELECT * FROM users
+                            WHERE id = :userId');
+        //bind parameters
+        $this->db->bind('userId', $id);
+
+        //set the found user to a variable
+        $foundUser = $this->db->single();
+
+        //return found user if found else return false
+        if($foundUser){
+            return $foundUser;
+        } else {
+            return false;
+        }
     }
 }

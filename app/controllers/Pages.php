@@ -2,6 +2,7 @@
 class Pages extends Controller{
     public function __construct(){
         $this->pageModel = $this->model('Page');
+        $this->userModel = $this->model('User');
     }
 
     public function index(){
@@ -158,11 +159,5 @@ class Pages extends Controller{
             ];
             $this->view('pages/book', $data);
         }        
-    }
-
-    public function portfolio(){
-        $data = $this->pageModel->getPortfolio();
-
-        $this->view('pages/portfolio', $data);
     }
 }

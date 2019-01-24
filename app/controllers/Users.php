@@ -25,7 +25,7 @@ class Users extends Controller{
             //Validate password input
             if(empty($data['password'])){
                 $data['userErr'] = 'Du måste ange ett lösenod';
-            }
+            } 
 
             //if the errors are empty
             if(empty($data['userErr'])){
@@ -33,9 +33,23 @@ class Users extends Controller{
                 $loggedInUser = $this->userModel->getUserFromUserName($data['userName']);
 
                 if($loggedInUser){
-                    //check if passwords match
+                    //check that passwords match
+                    if(password_verify($data['password'], $loggedInUser->password)){
+                        //passwords match
+                        //start the user session
+                        $this->startUserSession($loggedInUser);
+                        flash('loginSuccess', 'Du är nu inloggad');
+                        //redirect to index
+                        redirect('pages/index');
+                    } else {
+                        $data['userErr'] = 'Fel lösenord eller användarnamn';
+                        //return to login page with errors
+                        $this->view('users/login', $data);
+                    }
                 } else {
                     $data['userErr'] = 'Fel lösenord eller användarnamn';
+                    //return to login page with errors
+                    $this->view('users/login', $data);
                 }
             } else {
                 //return to login page with errors
@@ -43,9 +57,21 @@ class Users extends Controller{
             }
 
         } else {
+            $data = [
+                'userName' => '',
+                'password' => '',
+                'userErr' => ''
+            ];
+
             //load the login page
             $this->view('users/login', $data);
         }
+    }
+
+    public function startUserSession($user){
+        $_SESSION['userId'] = $user->id;
+        $_SESSION['userName'] = $user->userName;
+
     }
 
     public function register(){
@@ -138,5 +164,21 @@ class Users extends Controller{
 
             $this->view('users/register', $data);
         }
+    }
+
+    public function profile(){
+        $data = $this->userModel->getUserById($_SESSION['userId']);
+        if($data){
+            $this->view('users/profile', $data);
+        } else {
+            die('Något gick fel, försök igen senare');
+        }        
+    }
+
+    public function logout(){
+        unset($_SESSION);
+        session_destroy();
+
+        redirect('pages/index');
     }
 }

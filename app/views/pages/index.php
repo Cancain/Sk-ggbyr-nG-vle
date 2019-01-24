@@ -1,6 +1,6 @@
 <?php require APPROOT . '/views/inc/header.php'?>
 <div class="wrapper">
-
+  <?php flash('loginSuccess'); ?>
       <!-- Top Container -->
       <section class="top-container">
         <header class="showcase">
@@ -43,25 +43,25 @@
       <!-- Boxes Section  -->
       <section class="boxes">
         <!-- <div class="box">  -->
-          <a href="arbetstraning.php" class="box"><i class="fas fa-briefcase fa-4x"></i>
+          <a href="<?php echo URLROOT ?>pages/arbetstraning" class="box"><i class="fas fa-briefcase fa-4x"></i>
           <p class="desc">Arbetsträning</p></a>
         <!-- </div> -->
           <div class="boximg">
-        <img src="img/code1.jpeg" alt="">
+        <img src="<?php echo URLROOT ?>img/code1.jpeg" alt="">
           </div>
         <!-- <div class="box"> -->
           <a href="portfolio.php" class="box"><i class="fas fa-archive fa-4x"></i>
           <p class="desc">Projekt</p></a>
         <!-- </div> -->
         <div class="boximg">
-          <img src="img/code2.jpeg" alt="">
+          <img src="<?php echo URLROOT ?>img/code2.jpeg" alt="">
             </div>
         <!-- <div class="box"> -->
           <a href="about.php" class="box"><i class="fas fa-info-circle fa-4x"></i>
           <p class="desc">Om oss</p></a>
         <!-- </div> -->
         <div class="boximg">
-          <img src="img/code3.jpg" alt="">
+          <img src="<?php echo URLROOT ?>img/code3.jpg" alt="">
             </div>
         </section>
     

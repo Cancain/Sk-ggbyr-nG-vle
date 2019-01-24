@@ -18,10 +18,10 @@
       <?php if($_SESSION):?>
       <div class="userBox">
         <ul id="userMenu">
-          <a href="profile.php">
+          <a href="<?php echo URLROOT ?>users/profile">
             <li class="navH"><?php echo $_SESSION['userName']?></li>
           </a>
-          <a href="#">
+          <a href="<?php echo URLROOT ?>users/logout">
             <li id="logOutBtn" class="navH">Logga ut</li>
           </a>
         </ul>
@@ -46,7 +46,7 @@
               </li>
             </a>
             <li id="contactBtnLg" class="navH">Kontakt</li>
-            <a href="<?php echo URLROOT ?>pages/portfolio">
+            <a href="<?php echo URLROOT ?>portfolios/portfolio">
               <li id="portfolioBtnLg" class="navH">Portfolio</li>
             </a>
             <a href="<?php echo URLROOT?>pages/arbetstraning">
@@ -83,7 +83,7 @@
           </a>
         </ul>
       </div>
-      <a href="<?php echo URLROOT?>pages/portfolio">
+      <a href="<?php echo URLROOT?>portfolios/portfolio">
         <li id="portfolioBtnSm" class="navV">Portfolio</li>
       </a>
       <a href="<?php echo URLROOT?>pages/arbetstraning">

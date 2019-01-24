@@ -12,6 +12,6 @@
   <title>Skäggbyrån Gävle</title>
 </head>
 
-<body><?php session_start(); ?>
+<body>
 <?php require APPROOT . '/views/inc/navBar.php'?>
   <div id="mainContent"></div>
