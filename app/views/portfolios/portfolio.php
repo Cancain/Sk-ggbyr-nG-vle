@@ -2,7 +2,7 @@
 <?php require APPROOT . '/views/inc/header.php'?>
 <div class="wrapper">
 <?php if($data['user'] && $data['user']->isAdmin): ?>
-<button>Lägg till</button>
+<a href="<?php echo URLROOT?>portfolios/add/"><button>Lägg till</button></a>
 
 <?php endif; ?>
 
